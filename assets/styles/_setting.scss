@@ -1,0 +1,46 @@
+/************** COLOR ******************/
+$white1: #FFF;
+$color1: #48556A;
+$color2: #6E8098;
+$color3: #ECF2F8;
+$color4: #9DAEC2;
+/************** FONT *******************/
+@font-face {
+    font-family: "manrope";
+    src: url(../fonts/Manrope-VariableFont_wght.ttf);
+}
+
+$font1: manrope, sans-serif;
+
+/********** GENERAL PARAMETER ***********/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+ 
+    font-family: $font1;
+    color: $color2;
+    font-size: 13px;
+    font-weight:500;
+    letter-spacing: 0.12px;
+    line-height: 20px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: $color3;
+}
+
+h3{
+    @media screen and (max-width:748px) {
+       font-size: 16px;
+       line-height: 24px; 
+    }
+    font-weight:700;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0.25px;
+}
